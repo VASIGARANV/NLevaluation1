@@ -1,4 +1,8 @@
 # NextLab-Django-Assignment-Evaluation
+## Problem Set 1
+#### Write a regex to extract all the numbers with orange color background from the below text in italics (Output should be a list).
+#### Expected o/p: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '648', '649', '650', '651', '652', '653', '3']
+
 
 ## Problem Set 3
 ### Please answer the below questions:
