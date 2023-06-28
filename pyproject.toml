@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nextlab-django-assignment-evaluation"
+version = "0.1.0"
+description = ""
+authors = ["5P4RK3R <mahendransparker@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nextlab_django_assignment_evaluation"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.2"
+psycopg2-binary = "^2.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
