@@ -15,6 +15,7 @@
 
 #### Create a new user with a password.
 `CREATE ROLE admin WITH LOGIN PASSWORD 'admin';`
+
 `ALTER ROLE admin CREATEDB;`
 
 #### In the root of the apppile project, run server:

@@ -30,4 +30,4 @@
 | Lightweight But, Extensible.               | Best for large & complex applications.     | 
 | Flexible & Scalable                        | Less Flexible But, Scalable                | 
 | URL Dispatcher is simple.                  | Regex based URL Dispatcher is Complex.     | 
-| Lacks a ORM                                | ORM.                                       | 
+| Lacks a ORM                                | Builtin ORM.                               | 

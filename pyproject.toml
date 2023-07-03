@@ -10,6 +10,7 @@ packages = [{include = "nextlab_django_assignment_evaluation"}]
 python = "^3.10"
 django = "^4.2.2"
 psycopg2-binary = "^2.9.6"
+django-environ = "^0.10.0"
 
 
 [build-system]
