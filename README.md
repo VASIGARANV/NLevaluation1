@@ -31,3 +31,25 @@
 | Flexible & Scalable                        | Less Flexible But, Scalable                | 
 | URL Dispatcher is simple.                  | Regex based URL Dispatcher is Complex.     | 
 | Lacks a ORM                                | Builtin ORM.                               | 
+
+
+
+
+
+#### Bonus points 
+For good s/w eng practices: e.g. modularity, well documented (comments and README), Normalized db schema, requirements.txt etc. Blow my mind!
+Important Notes
+Feel free to Google or Stackoverflow (or even go as far as read a book) to understand anything, but please do NOT copy/paste any code/snippet.
+Finish your assignment before the assigned deadline. If you need to extend the deadline, please make sure you drops us an email.
+Document how you deployed the project (in READMe)
+
+
+#### How to Submit
+
+Fill this submission form https://forms.gle/tTUPT9x9rrqK8S7G9 We only consider the submissions through Google Form wef April 15th, 2021.  (Before you fill up the form, please read the below four important pointers)
+Please create a repository in GitLab(Not Github), and add @NLEvaluations for evaluation (Only maintainer’s access), and deploy it to any server and share the link. 
+Please include a short video/screencast - running the evaluator through both the problem statement and your solution (While we will not assess the longer videos negatively, we’d prefer the videos to be under 5 minutes - and it should be very concise and to the point). You can add the link to the Readme of the repository. 
+Is there any way that you can automate the delivery? Wow us and get bonus points for the task. 
+All the answers to the questions (As asked in Part D) should go in ReadMe. 
+
+
