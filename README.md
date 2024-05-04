@@ -16,6 +16,8 @@
 #### Tasks completed. 
 #### Option to upload a screenshot (which must include drag and drop) for that particular task. (Like if a user downloads a particular app), he can send a screenshot of the open app to confirm that he has indeed downloaded the app. 
 
+### To run the app:
+`flet run [app_directory]`
 
 ## Problem Set 3
 ### Please answer the below questions:
