@@ -29,7 +29,7 @@ from stateManager.memoryStore import InMemoryStore
 from model.user import User
 
 
-class TrelloApp(UserControl):
+class AppIsle(UserControl):
     def __init__(self, page: Page, store: DataStore):
         super().__init__()
         self.page = page
@@ -45,7 +45,7 @@ class TrelloApp(UserControl):
         self.appbar = AppBar(
             leading=Icon(icons.GRID_GOLDENRATIO_ROUNDED),
             leading_width=100,
-            title=Text(f"Trolli", font_family="Pacifico", size=32, text_align="start"),
+            title=Text(f"AppIsle", font_family="Pacifico", size=32, text_align="start"),
             center_title=False,
             toolbar_height=75,
             bgcolor=colors.LIGHT_BLUE_ACCENT_700,
@@ -201,7 +201,7 @@ def main(page: Page):
     page.theme.page_transitions.windows = "cupertino"
     page.fonts = {"Pacifico": "Pacifico-Regular.ttf"}
     page.bgcolor = colors.BLUE_GREY_200
-    app = TrelloApp(page, InMemoryStore())
+    app = AppIsle(page, InMemoryStore())
     page.add(app)
     page.update()
     app.initialize()

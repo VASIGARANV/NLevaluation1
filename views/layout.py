@@ -44,13 +44,13 @@ class AppLayout(Row):
                 Row(
                     [
                         Container(
-                            Text(value="Your Boards", style="headlineMedium"),
+                            Text(value="Home", style="headlineMedium"),
                             expand=True,
                             padding=padding.only(top=15),
                         ),
                         Container(
                             TextButton(
-                                "Add new board",
+                                "Add Apps",
                                 icon=icons.ADD,
                                 on_click=self.app.add_board,
                                 style=ButtonStyle(

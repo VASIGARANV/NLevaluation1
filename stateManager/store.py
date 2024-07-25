@@ -1,9 +1,9 @@
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from board import Board
-    from board_list import BoardList
-    from user import User
-    from item import Item
+    from widgets.board import Board
+    from widgets.boards import BoardList
+    from model.user import User
+    from widgets.item import Item
 
 
 class DataStore:
