@@ -1,0 +1,56 @@
+# Define variables
+PYTHON = python3
+PIP = pip3
+VENV = venv
+PORT = 8080
+OUTPUT_DIR = output
+BROWSER = "Arc"
+URL = http://localhost:8080
+APP_NAME ?= myapp
+
+# Define targets
+.PHONY: all install clean run
+
+# Default target to set up the environment and run the server
+all: install run
+
+# Install dependencies
+install:
+	$(PYTHON) -m venv $(VENV)
+	source $(VENV)/bin/activate && $(PIP) install -r requirements.txt
+
+# Clean the project
+clean:
+	find . -type f -name "*.pyc" -delete
+	find . -type f -name "*.pid" -delete
+	find . -type f -name "*.DS_Store" -delete
+	find . -type f -name "*.log" -delete
+	find . -type f -name "log.html" -delete
+	find . -type f -name "report.html" -delete
+	find . -type f -name "output.xml" -delete
+	find . -type d -name "__pycache__" -delete
+
+# Run the server
+run:
+	mkdir -p $(OUTPUT_DIR)
+	source $(VENV)/bin/activate && python3 manage.py runserver 
+	
+ui:
+	source $(VENV)/bin/activate && python3 main.py
+
+server:
+	mkdir -p $(OUTPUT_DIR)
+	python3 manage.py runserver
+	
+automate:
+	ansible-playbook -i ansible/inventory/main.ini ansible/main.yml
+
+# Rule to start a new Django app
+app:
+	python3 manage.py startapp $(APP_NAME)
+
+# If you want to provide help or instructions
+help:
+	@echo "Usage: make startapp APP_NAME=<app_name>"
+	@echo "Example: make startapp APP_NAME=blog"
+
