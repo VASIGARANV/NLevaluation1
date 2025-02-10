@@ -1,3 +1,4 @@
+
 from widgets.board import Board
 from stateManager.store import DataStore
 from flet import (
