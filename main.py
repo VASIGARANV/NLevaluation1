@@ -1,3 +1,4 @@
+
 import flet
 from views.layout import AppLayout
 from widgets.board import Board
